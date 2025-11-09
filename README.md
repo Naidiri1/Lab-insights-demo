@@ -9,7 +9,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38bdf8?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![React](https://img.shields.io/badge/React-19.0-61dafb?style=for-the-badge&logo=react)](https://react.dev/)
 
-**[🚀 Live Demo](https://lab-insights-demo-gqyb.vercel.app/) • [📹 Video Walkthrough](#)**
+**[🚀 Live Demo](https://lab-insights-demo-gqyb.vercel.app/) 
 
 <img src="https://via.placeholder.com/800x400/1e293b/ffffff?text=Dashboard+Screenshot+Here" alt="Lab Insights Dashboard" width="100%" />
 
@@ -17,23 +17,6 @@
 
 </div>
 
----
-
-## 📋 Table of Contents
-
-- [Overview](#-overview)
-- [Key Features](#-key-features)
-- [Tech Stack](#-tech-stack)
-- [Live Demo](#-live-demo)
-- [Architecture](#-architecture)
-- [Getting Started](#-getting-started)
-- [Project Structure](#-project-structure)
-- [Technical Highlights](#-technical-highlights)
-- [What I Learned](#-what-i-learned)
-- [Future Enhancements](#-future-enhancements)
-- [About](#-about)
-
----
 
 ## 🎯 Overview
 
@@ -44,8 +27,7 @@ This dashboard was built to explore **lab benefit management** platforms and dem
 - 💰 Optimize costs through managed lab networks
 - 🎯 Make data-driven clinical decisions
 
-> **Built for:** Avalon Healthcare Solutions interview showcase  
-> **Purpose:** Demonstrate full-stack healthcare software engineering skills  
+> **Purpose:** Demonstrate healthcare software engineering skills  
 > **Status:** ✅ Production-ready demo
 
 ---
@@ -108,4 +90,3 @@ This dashboard was built to explore **lab benefit management** platforms and dem
 | Frontend | Styling | Data Viz | Development |
 |:--------:|:-------:|:--------:|:-----------:|
 | ![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js) | ![Tailwind](https://img.shields.io/badge/-Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white) | ![Recharts](https://img.shields.io/badge/-Recharts-8884d8?style=flat-square) | ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
-| ![React](https://img.shields.io/badge/-React-61DAFB?
