@@ -13,7 +13,7 @@ export const labTests: LabTest[] = [
     normalRange: '4.0-5.6%',
     riskLevel: 'critical',
     cost: 50,
-    avalonCost: 35,
+    labInsightsCost: 35,
     flagged: true,
     recommendation: 'Immediate follow-up required - diabetes management'
   },
@@ -28,7 +28,7 @@ export const labTests: LabTest[] = [
     normalRange: '<200 mg/dL',
     riskLevel: 'high',
     cost: 65,
-    avalonCost: 42,
+    labInsightsCost: 42,
     flagged: true,
     recommendation: 'Lifestyle changes recommended, retest in 3 months'
   },
@@ -43,7 +43,7 @@ export const labTests: LabTest[] = [
     normalRange: 'Within normal limits',
     riskLevel: 'low',
     cost: 45,
-    avalonCost: 32,
+    labInsightsCost: 32,
     flagged: false,
     recommendation: 'Normal - routine monitoring'
   },
@@ -58,7 +58,7 @@ export const labTests: LabTest[] = [
     normalRange: '30-100 ng/mL',
     riskLevel: 'medium',
     cost: 55,
-    avalonCost: 38,
+    labInsightsCost: 38,
     flagged: true,
     recommendation: 'Deficiency detected - supplementation advised'
   },
@@ -73,7 +73,7 @@ export const labTests: LabTest[] = [
     normalRange: '0.4-4.0 mIU/L',
     riskLevel: 'high',
     cost: 48,
-    avalonCost: 33,
+    labInsightsCost: 33,
     flagged: true,
     recommendation: 'Hyperthyroidism suspected - endocrinology referral'
   },
@@ -88,7 +88,7 @@ export const labTests: LabTest[] = [
     normalRange: 'Within normal limits',
     riskLevel: 'low',
     cost: 42,
-    avalonCost: 28,
+    labInsightsCost: 28,
     flagged: false,
     recommendation: 'Normal - continue routine screening'
   },
@@ -103,7 +103,7 @@ export const labTests: LabTest[] = [
     normalRange: '<4.0 ng/mL',
     riskLevel: 'critical',
     cost: 70,
-    avalonCost: 48,
+    labInsightsCost: 48,
     flagged: true,
     recommendation: 'Urgent - urology consultation required'
   },
@@ -118,7 +118,7 @@ export const labTests: LabTest[] = [
     normalRange: 'Within normal limits',
     riskLevel: 'low',
     cost: 25,
-    avalonCost: 18,
+    labInsightsCost: 18,
     flagged: false,
     recommendation: 'Normal - no action needed'
   },
@@ -133,7 +133,7 @@ export const labTests: LabTest[] = [
     normalRange: 'Within normal limits',
     riskLevel: 'low',
     cost: 52,
-    avalonCost: 36,
+    labInsightsCost: 36,
     flagged: false,
     recommendation: 'Normal liver function'
   },
@@ -148,7 +148,7 @@ export const labTests: LabTest[] = [
     normalRange: '<3.0 mg/L',
     riskLevel: 'high',
     cost: 38,
-    avalonCost: 26,
+    labInsightsCost: 26,
     flagged: true,
     recommendation: 'Elevated inflammation - investigate cause'
   },
@@ -163,7 +163,7 @@ export const labTests: LabTest[] = [
     normalRange: '70-100 mg/dL',
     riskLevel: 'medium',
     cost: 28,
-    avalonCost: 19,
+    labInsightsCost: 19,
     flagged: true,
     recommendation: 'Prediabetic range - lifestyle intervention'
   },
@@ -178,7 +178,7 @@ export const labTests: LabTest[] = [
     normalRange: 'Within normal limits',
     riskLevel: 'low',
     cost: 44,
-    avalonCost: 30,
+    labInsightsCost: 30,
     flagged: false,
     recommendation: 'Normal iron levels'
   }
@@ -196,12 +196,12 @@ export const getRiskCounts = (tests: LabTest[]) => {
 
 export const calculateSavings = (tests: LabTest[]) => {
   const totalRegular = tests.reduce((sum, test) => sum + test.cost, 0);
-  const totalAvalon = tests.reduce((sum, test) => sum + test.avalonCost, 0);
+  const totalLabInsights = tests.reduce((sum, test) => sum + test.labInsightsCost, 0);
   return {
     totalRegular,
-    totalAvalon,
-    savings: totalRegular - totalAvalon,
-    savingsPercent: ((totalRegular - totalAvalon) / totalRegular * 100).toFixed(1)
+    totalLabInsights,
+    savings: totalRegular - totalLabInsights,
+    savingsPercent: ((totalRegular - totalLabInsights) / totalRegular * 100).toFixed(1)
   };
 };
 
