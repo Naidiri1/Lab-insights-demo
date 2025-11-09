@@ -1,11 +1,9 @@
-import type { LabTest } from '@/lib/data';
-
 interface TestResultCardProps {
   test: LabTest;
 }
 
 export default function TestResultCard({ test }: TestResultCardProps) {
-  const riskStyles = {
+  const riskStyles: Record<'low' | 'medium' | 'high' | 'critical', { border: string; bg: string; badge: string }> = {
     low: {
       border: 'border-green-500',
       bg: 'bg-green-50/50',
@@ -31,7 +29,7 @@ export default function TestResultCard({ test }: TestResultCardProps) {
   const style = riskStyles[test.riskLevel];
 
   return (
-    <div 
+    <div
       className={`border-l-4 p-4 rounded-r-xl transition-all hover:shadow-lg hover:scale-[1.01] ${style.border} ${style.bg}`}
     >
       <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
@@ -53,7 +51,7 @@ export default function TestResultCard({ test }: TestResultCardProps) {
           <p className="text-sm text-slate-700 mt-2 italic">{test.recommendation}</p>
         </div>
       </div>
-      
+
       <div className="flex flex-wrap gap-3 md:gap-4 mt-3 text-xs md:text-sm text-slate-500">
         <span className="flex items-center gap-1">
           📅 {new Date(test.date).toLocaleDateString()}

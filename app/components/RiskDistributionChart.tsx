@@ -1,4 +1,4 @@
-import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
+import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from 'recharts';
 
 
 
@@ -11,28 +11,31 @@ export default function RiskDistributionChart({ riskCounts }: RiskDistributionCh
   ];
 
   return (
-    <div className="bg-white p-6 rounded-xl shadow-md border border-slate-100 hover:shadow-xl transition-shadow">
-      <div className="flex items-center gap-2 mb-4">
-        <span className="text-xl">📈</span>
-        <h3 className="text-xl font-bold text-slate-900">Risk Distribution</h3>
-      </div>
+    <div className="bg-white p-6 rounded-lg shadow-sm">
+      <h3 className="text-xl font-bold text-slate-900 mb-4">Risk Distribution</h3>
       <ResponsiveContainer width="100%" height={300}>
         <PieChart>
           <Pie
             data={riskChartData}
             cx="50%"
             cy="50%"
-            labelLine={false}
-            label={({ name, percent}: any) => `${name}: ${(percent * 100).toFixed(0)}%`}
-            outerRadius={80}
+            outerRadius={90}
             fill="#8884d8"
             dataKey="value"
+            label={({ percent }:any) => percent > 0 ? `${(percent * 100).toFixed(0)}%` : ''}
           >
             {riskChartData.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={entry.color} />
             ))}
           </Pie>
-          <Tooltip />
+          <Tooltip 
+            formatter={(value: number) => `${value} tests`}
+          />
+          <Legend 
+            verticalAlign="bottom" 
+            height={36}
+            formatter={(value) => <span className="text-sm">{value}</span>}
+          />
         </PieChart>
       </ResponsiveContainer>
     </div>

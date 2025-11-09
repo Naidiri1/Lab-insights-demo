@@ -1,9 +1,3 @@
-interface RiskCardProps {
-  label: string;
-  count: number;
-  description: string;
-  color: 'green' | 'yellow' | 'orange' | 'red';
-}
 
 export default function RiskCard({ label, count, description, color }: RiskCardProps) {
   const colorConfig = {

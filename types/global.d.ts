@@ -1,3 +1,5 @@
+type RiskLevel = 'low' | 'medium' | 'high' | 'critical';
+
 interface LabTest {
   id: string;
   patientId: string;
@@ -52,4 +54,11 @@ interface CategoryChartData {
 
 interface CategoryBarChartProps {
   data: CategoryChartData[];
+}
+
+interface RiskCardProps {
+  label: string;
+  count: number;
+  description: string;
+  color: 'green' | 'yellow' | 'orange' | 'red';
 }
