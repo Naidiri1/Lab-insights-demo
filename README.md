@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# 🔬 Lab Insights Dashboard
 
-First, run the development server:
+### Real-Time Healthcare Analytics & Risk Stratification Platform
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[![Next.js](https://img.shields.io/badge/Next.js-16.0-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38bdf8?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![React](https://img.shields.io/badge/React-19.0-61dafb?style=for-the-badge&logo=react)](https://react.dev/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**[🚀 Live Demo](https://lab-insights-demo-gqyb.vercel.app/) • [📹 Video Walkthrough](#)**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<img src="https://via.placeholder.com/800x400/1e293b/ffffff?text=Dashboard+Screenshot+Here" alt="Lab Insights Dashboard" width="100%" />
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+*A production-ready healthcare analytics dashboard demonstrating diagnostic intelligence, real-time risk stratification, and lab benefit cost optimization.*
 
-## Learn More
+</div>
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📋 Table of Contents
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [Overview](#-overview)
+- [Key Features](#-key-features)
+- [Tech Stack](#-tech-stack)
+- [Live Demo](#-live-demo)
+- [Architecture](#-architecture)
+- [Getting Started](#-getting-started)
+- [Project Structure](#-project-structure)
+- [Technical Highlights](#-technical-highlights)
+- [What I Learned](#-what-i-learned)
+- [Future Enhancements](#-future-enhancements)
+- [About](#-about)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎯 Overview
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This dashboard was built to explore **lab benefit management** platforms and demonstrate my ability to create production-quality healthcare applications. It simulates the type of analytics tool health plans use to:
+
+- 📊 Monitor lab testing in real-time
+- ⚠️ Stratify patient risk based on diagnostic results
+- 💰 Optimize costs through managed lab networks
+- 🎯 Make data-driven clinical decisions
+
+> **Built for:** Avalon Healthcare Solutions interview showcase  
+> **Purpose:** Demonstrate full-stack healthcare software engineering skills  
+> **Status:** ✅ Production-ready demo
+
+---
+
+## ✨ Key Features
+
+<table>
+<tr>
+<td width="50%">
+
+### 🔍 **Smart Filtering**
+- Real-time search across test names
+- Filter by risk level (Low, Medium, High, Critical)
+- Category-based filtering
+- Clear all filters with one click
+- Active filter indicators
+
+</td>
+<td width="50%">
+
+### 📊 **Interactive Analytics**
+- Pie chart: Risk distribution visualization
+- Bar chart: Tests by category analysis
+- Dynamic updates on filter changes
+- Responsive chart sizing
+- Smooth animations
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### ⚡ **Real-Time Updates**
+- Live risk metric calculations
+- Instant cost savings tracking
+- Dynamic test count updates
+- Percentage-based insights
+- Filtered vs. total comparisons
+
+</td>
+<td width="50%">
+
+### 💰 **Cost Intelligence**
+- Before/after price comparison
+- Savings percentage display
+- Network cost optimization
+- Per-test breakdown
+- Aggregate savings metrics
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+| Frontend | Styling | Data Viz | Development |
+|:--------:|:-------:|:--------:|:-----------:|
+| ![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js) | ![Tailwind](https://img.shields.io/badge/-Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white) | ![Recharts](https://img.shields.io/badge/-Recharts-8884d8?style=flat-square) | ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
+| ![React](https://img.shields.io/badge/-React-61DAFB?
