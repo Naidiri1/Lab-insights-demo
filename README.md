@@ -11,7 +11,6 @@
 
 **[🚀 Live Demo](https://lab-insights-demo-gqyb.vercel.app/) 
 
-<img src="https://via.placeholder.com/800x400/1e293b/ffffff?text=Dashboard+Screenshot+Here" alt="Lab Insights Dashboard" width="100%" />
 
 *A production-ready healthcare analytics dashboard demonstrating diagnostic intelligence, real-time risk stratification, and lab benefit cost optimization.*
 
